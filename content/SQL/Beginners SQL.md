@@ -1,7 +1,8 @@
 ---
-title: '"Beginners SQL"'
+title: Beginners SQL
 draft: false
 tags:
+  - sql
 ---
 ## Overview
 
@@ -21,6 +22,7 @@ tags:
 ```sql
 SELECT *
 FROM actor
+--'*' selects all columns
 
 SELECT first_name,last_name
 FROM actor
@@ -217,14 +219,3 @@ FROM payment
 GROUP BY customer_id
 HAVING SUM(amount) > 200
 ```
-
-#### Setting up new database
-
-1. Right click database and select PSQL Tool
-2. Paste the following into the command line and run
-
-```bash
-\i '/Users/summer/Library/CloudStorage/GoogleDrive-summer.z.hamilton@gmail.com/My Drive/04 - EDUCATION/Udemy/SQL/flight_database/flight_database.sql'
-```
-
-3. Select database and refresh
